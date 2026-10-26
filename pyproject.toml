@@ -1,0 +1,21 @@
+[project]
+name = "local-translate"
+version = "0.1.0"
+description = "Local text translation CLI powered by Ollama"
+readme = "README.md"
+authors = [
+    { name = "AzriellBautista", email = "63571795+AzriellBautista@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ollama>=0.6.3",
+    "rich>=15.0.0",
+    "typer>=0.27.3",
+]
+
+[project.scripts]
+local-translate = "local_translate:cli"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
